@@ -1,0 +1,19 @@
+.small-btn{
+    background-color: transparent;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border-color-light);
+
+    & img {
+        width: 30px;
+        object-fit: contain;
+    }
+}
+/* .small-btn:hover{ */
+    /* box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); */
+    /* border: 1px solid #000; */
+/* } */

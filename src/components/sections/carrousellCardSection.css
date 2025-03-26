@@ -1,0 +1,33 @@
+.strat-div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3rem;
+    row-gap: 3rem;
+
+    @media (max-width:990px) {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    @media (max-width:755px) {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+@media (max-width:1220px) {
+    .strat-div {
+        column-gap: 3rem;
+    }
+
+    .strategy {
+        padding: 4rem 1.0rem 2.5rem;
+    }
+}
+
+/* .tint-img{
+    filter: invert(27%) sepia(78%) saturate(2976%) hue-rotate(296deg) brightness(99%) contrast(90%);
+} */
+/* .tint:hover{
+    border: 1px solid #e048a7;
+} */

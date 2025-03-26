@@ -1,0 +1,116 @@
+.navigation{
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0.1rem;
+    align-items: center;
+    width: 100%;
+    /* margin-bottom: 0.4rem; */
+    /* padding-top: 0.4rem; */
+
+   
+   
+    
+}
+
+.links>ul{
+   
+    display: flex;
+    font-weight: 500;
+    gap: 1rem;
+    margin: 0;
+    & li{
+        /* padding: 1rem 0; */
+        padding: 2rem 0 2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.2rem;
+        & img{
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+
+    @media (max-width:992px) {
+        display: none;
+    }
+}
+
+
+.logo-nav > a{
+   
+    font-size: 1.75rem;
+    margin: 1rem 0;
+    line-height: 1.1;
+    font-weight: 700;
+    color: var(--btn-primary) !important;
+    @media (max-width:750px) {
+        margin: 1rem 0.5rem;
+        }
+}
+
+ a {
+    /* color: #646cff; */
+    color: rgb(44, 43, 43);
+    /* text-decoration: inherit; */
+}
+/* .navigation */
+ .navigation a:hover {
+    /* color: rgb(165, 131, 164); */
+    color: var(--btn-primary);
+}
+li:hover{
+    border-bottom: 2px solid var(--btn-primary);
+}
+.links img{
+    /* filter: invert(27%) sepia(78%) saturate(2976%) hue-rotate(296deg) brightness(99%) contrast(90%); */
+}
+
+.account{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    @media (max-width:750px) {
+            padding: 0 0.5rem;
+        }
+
+   
+
+
+}
+
+.account > .login, .account > .button{
+    /* margin-left: 1rem; */
+    @media (max-width:490px) {
+            display: none;
+        }
+}
+.login:hover{
+    text-decoration: underline;
+}
+
+.nav-hover{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: "100%";
+    background-color: var(--background-color);
+    
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    /* padding-left:0.5rem;
+    padding-right: 0.5rem; */
+    
+    @media (min-width:490px) {
+        justify-content: space-around;
+    }
+}
+
+.m-nav{
+    padding: 0 1rem;
+    background-color: var(--background-color);
+}
+@media (min-width:994px) {
+
+}

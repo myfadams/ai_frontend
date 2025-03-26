@@ -1,0 +1,150 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+.carou-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+.swipe-area {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 60px;
+}
+
+.carousel-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.main-carou-body {
+    display: grid;
+    grid-template-columns: 0.4fr 0.6fr;
+}
+
+.carou-text {
+    display: grid;
+    grid-template-rows: 0.7fr 0.3fr;
+    padding: 4rem 0 0;
+    color: var(--text-color-primary);
+    background-color: black;
+}
+
+.top-part {
+    padding: 0 4rem 3rem;
+
+    & h3 {
+        font-size: 1.5rem;
+        font-weight: 400;
+        /* align-self: ; */
+    }
+
+    @media (min-width:1060px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+}
+
+.bottom-part {
+    border-top: 0.5px solid #fff3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* padding: 0 0 0 4rem; */
+}
+
+.about-carou {
+    padding: 2rem 3rem;
+
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    /* align-items: center; */
+    & h3 {
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+}
+
+.logo-carou {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+        width: 60%;
+        height: 60%;
+        object-fit: contain;
+        /* filter: invert(22%) sepia(38%) saturate(790%) hue-rotate(221deg) brightness(85%) contrast(95%); */
+    }
+}
+
+@media (max-width:750px) {
+    .bottom-part {
+        grid-template-columns: 0.7fr 0.3fr;
+        /* padding: 0 0 0 4rem; */
+    }
+
+    .main-carou-body {
+
+        grid-template-columns: 1fr;
+    }
+
+    .carou-text {
+        grid-template-rows: 0.7fr 0.3fr;
+
+    }
+
+    .carousel-img {
+        height: 300px;
+        /* width: 300px; */
+        object-fit: cover;
+    }
+}
+
+@media (max-width:600px) {
+
+    .top-part {
+
+        & h3 {
+            font-size: 1.2rem;
+        }
+    }
+
+}

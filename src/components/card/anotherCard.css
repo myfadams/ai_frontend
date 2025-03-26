@@ -1,0 +1,40 @@
+.card-img_v2 {
+    object-fit: cover;
+    width: 100%;
+    max-height: 220px;
+    /* margin: 8px 8px 24px; */
+    /* flex: 1; */
+}
+.card-body-v2:hover{
+    border: 1px solid var(--primary-color);
+}
+
+.card-body-v2{
+    /* max-width: 350px; */
+    /* gap: 1rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem 1.3rem 2rem; 
+    border: 1px solid var(--border-color-light);
+    border-radius: 5px;
+}
+
+.card-text-v2 {
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    & h3 {
+        margin: 0.6rem 0;
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: black;
+    }
+
+    & p {
+        font-size: 1.05rem;
+        color: var(--text-color-secondary);
+    }
+}

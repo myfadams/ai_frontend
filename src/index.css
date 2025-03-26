@@ -1,0 +1,82 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Liter&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+:root {
+  /* rgb(165,131,164) #493D9E #7E5CAD #9c2d7c #e048a7*/
+  --primary-color: #493D9E;
+  --secondary-color:#f065c9 ;
+  --tenary-color:#7E5CAD;
+  --text-color-primary: #fff;
+  --text-color-secondary:#566b76;
+  --background-section-color: #f6fafb;
+  --background-color:#fff;
+  --border-color-light: #e4edf1;
+  --text-primary:#7E1891;
+  --btn-primary:#E73879;
+  --other-color:#F05A7E;
+  /* rgba(197, 197, 197, 0.6) */
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  /* min-height: 100vh; */
+  font-family: "Nunito Sans", sans-serif;
+}
+
+
+.button {
+  /* #646cff 493D9E*/
+  background-color: var(--btn-primary);
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 5px;
+  outline: none;
+  border:none ;
+
+
+}
+.button:hover {
+  color: #fff;
+  opacity: 0.8;
+}
+.text-input{
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.topper{
+  /* height: 2rem; */
+  /* background-color: red; */
+  background: linear-gradient(to right,var(--btn-primary) ,var(--other-color) 50% , var(--btn-primary) );
+  /* background: linear-gradient(to right, #000 20%, #b0b0b0 45%, #b0b0b0 55%, #000 80%); */
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0.7rem;
+
+  & a{
+    color: #fff;
+  }
+    @media (max-width:550px) {
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
+}
+
+.global-h3 {
+  margin: 0;
+  /* font-size: 5rem; */
+  font-weight: 700;
+  line-height: 1.0;
+  color: var(--btn-primary);
+}
+
+button:hover{
+  cursor: pointer;
+}
