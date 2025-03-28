@@ -11,6 +11,7 @@ import AnotherCard from "./components/card/AnotherCard";
 import CarousellCardSection from "./components/sections/CarousellCardSection";
 import SmallButton from "./components/smallButton/SmallButton";
 import { useNavigate } from "react-router";
+import TopComponent from "./components/NavBar/TopComponent";
 
 function App() {
 	const navigate = useNavigate();
@@ -29,25 +30,7 @@ function App() {
 
 	return (
 		<>
-			<div className="topper">
-				<p>The future of GTM AI is here.</p>
-				<a href="#" className="get-book">
-					Get the book
-					<div
-						style={{
-							height: "35px",
-							width: "35px",
-							backgroundColor: "#5d5d5d",
-							borderRadius: "6px",
-							display: "flex",
-							justifyContent: "center",
-							alignItems: "center",
-						}}
-					>
-						<img src="./right.svg" alt="" width={"20px"} className="arrow" />
-					</div>
-				</a>
-			</div>
+			<TopComponent/>
 			<main>
 				
 					<NavBar />

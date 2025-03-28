@@ -1,0 +1,21 @@
+.topper{
+  /* height: 2rem; */
+  /* background-color: red; */
+  background: linear-gradient(to right,var(--btn-primary) ,var(--other-color) 50% , var(--btn-primary) );
+  /* background: linear-gradient(to right, #000 20%, #b0b0b0 45%, #b0b0b0 55%, #000 80%); */
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0.7rem;
+
+  & a{
+    color: #fff;
+  }
+    @media (max-width:550px) {
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
+}
