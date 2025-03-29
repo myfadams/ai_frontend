@@ -1,58 +1,108 @@
 .main-chatBody {
 	display: flex;
 	flex-direction: column;
-	/* justify-content: flex-end; */
 	width: 100%;
 	height: 90vh;
-	/* justify-content: baseline; */
 	position: relative;
+	overflow-y: auto;
+	/* padding-bottom: 4rem; */
+	 /* Ensure space for input */
+}
+
+.chat-container {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 1rem;
+	overflow-y: auto;
+	margin-bottom: 4rem;
+}
+
+.chat-bubble {
+	max-width: 60%;
+	padding: 0.8rem;
+	border-radius: 12px;
+	font-size: 1rem;
+	word-wrap: break-word;
+	margin-bottom: 2rem;
+}
+
+.user {
+	align-self: flex-end;
+	background-color: var(--btn-primary);
+	color: white;
+}
+
+.bot {
+	align-self: flex-start;
+	background-color: #f1f1f1;
+	color: black;
 }
 
 .input-sect {
-	align-self: last baseline;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: spa;
-	width: 100%;
-	/* position: fixed; */
-	/* left: 0; */
 	gap: 1rem;
 	box-sizing: border-box;
-	padding: 1rem;
-	& textarea {
-		/* flex-grow: 1; */
-		resize: none;
-		width: 100%;
-		text-align: left;
-		font-size: 1.1rem;
-		border: 2px solid black;
-		border-radius: 4px;
-		outline: none;
-		/* max-height: 3rem; */
-		padding: 0.3rem;
-
-		min-height: 2rem; /* Minimum height */
-		max-height: 4rem; /* Maximum height */
-		height: auto;
-		overflow-y: auto; /* Allows scrolling when max-height is reached */
-		resize: none;
-	}
-
-	& button {
-		width: 6rem;
-		height: 2.5rem;
-	}
+	padding: 0.8rem;
+	background: white;
+	border-top: 1px solid #ccc;
 }
 
-.button1 {
-	justify-content: center;
-	align-items: center;
-	padding: 0.3rem;
+.input-sect textarea {
+    flex-grow: 1;
+    resize: none;
+    font-size: 1.1rem;
+    border: 2px solid black;
+    border-radius: 4px;
+    outline: none;
+    padding: 0.3rem;
+    min-height: 2rem; /* Minimum height */
+    max-height:7.5rem; /* Maximum height */
+    overflow-y: auto; /* Scroll when max height is reached */
+}
+
+.input-sect button {
+	width: 2.5rem;
+	height: 2.5rem;
 	font-size: 1rem;
-   background-color: var(--btn-primary);
-  color: #fff;
-  padding: 0.7rem 1rem;
-  border-radius: 5px;
-  outline: none;
-  border:none ;
+	background-color: var(--btn-primary);
+	color: #fff;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	border-radius: 50%;
+
+	
+}
+
+@media screen and (max-width: 600px) {
+	.chat-bubble {
+		max-width: 75%;
+		font-size: 0.9rem;
+	}
+
+	.input-sect {
+		padding: 0.5rem;
+	}
+
+	.input-sect textarea {
+		font-size: 1rem;
+	}
+}
+.button1{
+	& img{
+		width: 1.3rem;
+		@media (max-width:600px) {
+			width: 3rem !important;
+		}
+	}
 }
